@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B50158C6-BBBC-42A5-9819-C12862434366}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>COW</RootNamespace>
+    <AssemblyName>COW</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastDevedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastDevedor.Designer.cs">
+      <DependentUpon>FormCadastDevedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastro.Designer.cs">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeletP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeletP.Designer.cs">
+      <DependentUpon>FormDeletP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevedor.Designer.cs">
+      <DependentUpon>FormDevedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolucao.Designer.cs">
+      <DependentUpon>FormDevolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarP.Designer.cs">
+      <DependentUpon>FormEditarP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovPedido.Designer.cs">
+      <DependentUpon>FormNovPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovProdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovProdu.Designer.cs">
+      <DependentUpon>FormNovProdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerfilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfilAdmin.Designer.cs">
+      <DependentUpon>FormPerfilAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerfilFuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfilFuncio.Designer.cs">
+      <DependentUpon>FormPerfilFuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduto.Designer.cs">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVenda.Designer.cs">
+      <DependentUpon>FormVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVENDprotduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVENDprotduto.Designer.cs">
+      <DependentUpon>FormVENDprotduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastDevedor.resx">
+      <DependentUpon>FormCadastDevedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastro.resx">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeletP.resx">
+      <DependentUpon>FormDeletP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevedor.resx">
+      <DependentUpon>FormDevedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevolucao.resx">
+      <DependentUpon>FormDevolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarP.resx">
+      <DependentUpon>FormEditarP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovPedido.resx">
+      <DependentUpon>FormNovPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovProdu.resx">
+      <DependentUpon>FormNovProdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfilAdmin.resx">
+      <DependentUpon>FormPerfilAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfilFuncio.resx">
+      <DependentUpon>FormPerfilFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduto.resx">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVenda.resx">
+      <DependentUpon>FormVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVENDprotduto.resx">
+      <DependentUpon>FormVENDprotduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
